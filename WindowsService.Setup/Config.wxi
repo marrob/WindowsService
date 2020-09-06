@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define ShortCompany = "AltonTech" ?>
+  <?define LongCompany =  "AltonTech" ?>
+  <?define MajorVersion = "0"?>
+  <?define MinorVersion = "0"?>
+  <?define BuildNumber  = "0"?> <!-- VS: The default build number increments daily. -->
+  <!-- Revision is NOT used by WiX in the upgrade procedure -->
+  <!--The default revision number is the number of seconds since midnight local time, divided by 2.-->
+  <?define Revision = "0"?>
+  
+  <!-- Full version number to display -->
+  <?define VersionNumber  = "$(var.MajorVersion).$(var.MinorVersion).$(var.BuildNumber).$(var.Revision)"?>
+  <?define ProductName = "MALT200817.Service"?>
+  <?define ProductCode = "{E547854D-10BB-4BAA-9872-C68B92F5CEEA}"?>
+  
+  
+  <?define URL = "https://github.com/marrob"?>
+
+  <!--
+  Upgrade code HAS to be the same for all updates.
+  Once you've chosen it don't change it.
+  -->
+  <?define UpgradeCode = "{E695F2C3-7D97-4B35-9F93-31DAEFD44BA2}"?>
+
+  <!--
+  The name of your application exe file. This will be used to kill the process when updating
+  and creating the desktop shortcut
+  -->
+  <?define ExeProcessName="MALT200817.Service.exe" ?>
+
+  <!--
+  CopyRight.
+  -->
+  <?define CopyrightMessage = "sa"?>
+
+
+  <!--
+  Global Paths.
+  -->
+  <?define AppDirectory               = "..\WindowsService1\bin\Debug"?>
+  <?define AppResourceDirectory       = ".\Resources"?>
+                                            
+  
+  
+</Include>
+

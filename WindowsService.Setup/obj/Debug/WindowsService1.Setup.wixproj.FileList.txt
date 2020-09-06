@@ -1,0 +1,8 @@
+C:\Users\Margit Robert\Documents\WindowsService1.Setup\bin\Debug\MALT200817.Setup.msi
+C:\Users\Margit Robert\Documents\WindowsService1.Setup\bin\Debug\MALT200817.Setup.wixpdb
+obj\Debug\Directories.wixobj
+obj\Debug\Main.wixobj
+obj\Debug\Service_Components.wixobj
+obj\Debug\WindowsService1.Setup.wixproj.BindContentsFileListnull.txt
+obj\Debug\WindowsService1.Setup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\WindowsService1.Setup.wixproj.BindBuiltOutputsFileListnull.txt

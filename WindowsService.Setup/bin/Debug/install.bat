@@ -1,0 +1,1 @@
+msiexec /i MALT200817.Setup.msi /l*v installLog.txt

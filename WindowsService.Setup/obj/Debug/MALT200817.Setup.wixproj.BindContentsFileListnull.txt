@@ -1,0 +1,3 @@
+..\MALT200817.Service\bin\Debug\MALT200817.Service.exe
+..\MALT200817.Service\bin\Debug\NiXnetDotNet.dll
+..\MALT200817.Service\bin\Debug\nunit.framework.dll

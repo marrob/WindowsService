@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+
+    <!-- This is how we include wxi files -->
+    <?include $(sys.CURRENTDIR)Config.wxi ?>
+
+    <Property Id="MYDOCUMENTSPATH">
+      <RegistrySearch Id="MyDocumentsSearch" Root="HKCU" Type="directory" Name="Personal"
+            Key="Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders"/>
+    </Property>
+
+    <!-- Directory Sturcture -->
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <!-- *Program Files* -->
+      <!--C:\Program Files\-->
+      <Directory Id = "ProgramFilesFolder">
+        <!--C:\Program Files\Konvolucio\-->
+        <Directory Id = "AppMnfFolder" Name="$(var.ShortCompany)">
+          <!--C:\Program Files\Konvolucio\MARC170608\-->
+          <Directory Id = "AppFolder" Name="$(var.ProductName)">
+            <!--C:\Program Files\Konvolucio\MARC170608\Drivers\-->
+            <Directory Id = "AppDriverFolder" Name="Drivers"/>
+          </Directory>
+        </Directory>
+      </Directory>
+
+
+      <!-- *Desktop* -->
+      <!--DesktopFolder = C:\Users\Public\Desktop\-->
+      <Directory Id="DesktopFolder" Name="Desktop" />
+      <!-- *Desktop* -->
+      <Directory Id ="MYDOCUMENTSPATH" SourceName="User's Personal Data Folder">
+        <!--C:\Users\Margit Róbert\Documents\Konvolucio\-->
+        <Directory Id = "MyDocMnfFolder" Name = "$(var.ShortCompany)">
+          <!--C:\Users\Margit Róbert\Documents\Konvolucio\MARC170608\-->
+          <Directory Id = "MyDocAppFolder" Name = "$(var.ProductName)">
+            <!--C:\Users\Margit Róbert\Documents\Konvolucio\MARC170608\Firmware Update-->
+            <Directory Id="MyDocFirmwareUpdateFolder" Name="Firmware Update"/>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+</Wix>

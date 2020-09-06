@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(sys.CURRENTDIR)Config.wxi ?>
+
+  <Product  Id="$(var.ProductCode)"
+            Name="$(var.ProductName)"
+            Language="1033"
+            Version="$(var.VersionNumber)"
+            Manufacturer="$(var.LongCompany)"
+            UpgradeCode="$(var.UpgradeCode)">
+
+    <Package   Id='*'
+     Keywords='Installer'
+     Description="MALT Platform"
+     Comments='MALT Platform is a registered trademark of AltonTech'
+     Manufacturer="$(var.LongCompany)"
+     InstallerVersion='200' Languages='1033' Compressed='yes' SummaryCodepage='1252' InstallScope="perMachine"  />
+
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <Media Id="1" Cabinet="media.cab" EmbedCab="yes" />
+
+    <!--User Interface-->
+    <UIRef Id="WixUI_Mondo" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+    <WixVariable Id="WixUILicenseRtf" Value=".\Resources\License.rtf" />
+    <WixVariable Id="WixUIBannerBmp" Value=".\Resources\Banner_500x70.jpg" />
+
+    <!-- Define App Icon -->
+    <Icon Id="AppAddRemove.ico" SourceFile=".\Resources\AppAddRemove.ico"/>
+    <!-- Set Your Installer's Icon in Add/Remove Programs -->
+    <Property Id="ARPPRODUCTICON" Value="AppAddRemove.ico"/>
+    <!-- Set CompoanyLink' in Add/Remove Programs -->
+    <Property Id="ARPHELPLINK" Value="$(var.URL)" />
+    <Property Id="ARPURLINFOABOUT" Value="$(var.URL)"/>
+    <Property Id="ARPURLUPDATEINFO" Value="$(var.URL)"/>
+    <Property Id="ARPHELPTELEPHONE" Value="$(var.URL)"/>
+
+
+    <!--Telepités a Featureök válaszhatók telepítés közben-->
+    <!--//Level: A Feature kikapcsolt, ha 0. Alaphelyzetben 1.  -->
+    <Feature Id="AppFeature" Title="Application" Level="1" Description="Device Firmware Update Tool and Frimwares">
+      <Feature Id ="App_Feature" Title="Application" Description="Firmware Upgrade Tool" Level="1">
+        <ComponentRef Id="Service_Components"/>
+      </Feature>
+    </Feature>
+
+  </Product>
+
+  <Fragment>
+  </Fragment>
+</Wix>

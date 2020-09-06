@@ -1,0 +1,39 @@
+﻿Installing assembly 'C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.InstallLog
+   assemblypath = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Committing assembly 'C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.InstallLog
+   assemblypath = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe
+   logfile = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Committing assembly 'C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe
+   logfile = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe
+   logfile = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Committing assembly 'C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe
+   logfile = C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Remove InstallState file because there are no installers.

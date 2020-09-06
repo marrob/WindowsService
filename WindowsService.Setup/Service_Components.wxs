@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <!--  http://stackoverflow.com/questions/1942039/how-to-install-and-start-a-windows-service-using-wix -->
+  <?include $(sys.CURRENTDIR)Config.wxi ?>
+  
+  <Fragment>
+    
+    
+    
+    <Component Id ="Service_Components" Directory="AppFolder" Guid ="{7610A2E5-5720-4746-AB8F-7961F12AA68B}">
+
+
+
+      <File Id='JobServiceEXE' Name='JobService.exe' DiskId='1' Source='$(var.AppDirectory)\WindowsService1.exe'  KeyPath='yes'/>
+      <ServiceInstall
+      Id="ServiceInstaller"
+      Type="ownProcess"
+      Name="JobService"
+      DisplayName="123 Co. JobService"
+      Description="Monitoring and management Jobs"
+      Start="auto"
+      Account="[SERVICEACCOUNT]"
+      Password="[SERVICEPASSWORD]"
+      ErrorControl="normal"
+      Arguments=" /start JobService"
+      />
+      <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="JobService" Wait="yes" />
+      
+    </Component>
+  </Fragment>
+</Wix>
+

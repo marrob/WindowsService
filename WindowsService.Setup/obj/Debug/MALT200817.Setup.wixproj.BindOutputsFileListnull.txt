@@ -1,0 +1,2 @@
+C:\Users\Margit Robert\Documents\MALT200817.Setup\bin\Debug\MALT200817.Setup.msi
+C:\Users\Margit Robert\Documents\MALT200817.Setup\bin\Debug\MALT200817.Setup.wixpdb

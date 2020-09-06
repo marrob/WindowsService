@@ -1,0 +1,9 @@
+C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe.config
+C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe
+C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.pdb
+C:\Users\Margit Robert\Documents\WindowsService1\obj\Debug\WindowsService1.csprojAssemblyReference.cache
+C:\Users\Margit Robert\Documents\WindowsService1\obj\Debug\WindowsService1.csproj.CoreCompileInputs.cache
+C:\Users\Margit Robert\Documents\WindowsService1\obj\Debug\WindowsService1.exe
+C:\Users\Margit Robert\Documents\WindowsService1\obj\Debug\WindowsService1.pdb
+C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe.CodeAnalysisLog.xml
+C:\Users\Margit Robert\Documents\WindowsService1\bin\Debug\WindowsService1.exe.lastcodeanalysissucceeded
